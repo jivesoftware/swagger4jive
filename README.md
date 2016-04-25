@@ -1,6 +1,15 @@
 # Swagger for Jive
 This add-on embeds Swagger.io capabilities into Jive.  For more details, please see the [Jive Developer Community](https://community.jivesoftware.com/community/developer).
 
+## Canvas View Gadget Parameters
+![Canvas View](https://github.com/jivesoftware/swagger4jive/blob/master/screenshot-1.png?raw=true)
+
+## Custom View on Tile Page
+![Canvas View](https://github.com/jivesoftware/swagger4jive/blob/master/screenshot-2.png?raw=true)
+
+## Embedded External Object
+![Canvas View](https://github.com/jivesoftware/swagger4jive/blob/master/screenshot-3.png?raw=true)
+
 ## Disclaimer
 
 This is not a fully polished implementation and should be used with care.
