@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module specificationVersion="1">
+  <ModulePrefs title="Swagger for Jive"
+               description="Jive Developer App Contributions for swagger4jive_"
+               author="Jive Developers"
+               author_affiliation="Jive Software (Open Source)"
+               author_email="jivedev@jivesoftware.com">
+
+   <!-- Commonly used features -->
+   <Require feature="dynamic-height" />
+   <Require feature="jive-core-v2" />
+   <Require feature="jquery-1.6" />
+   <Require feature="osapi"/>
+   <Require feature="settitle"/>
+   <Require feature="views" />
+   <Require feature="jive-core-v3" />
+   <Require feature="embedded-experiences" />
+	  <Require feature="actions">
+		    <Param name="action-contributions">
+   			<![CDATA[
+
+           <action id="swagger4jive.canvas"
+                   path="jive/apps/launcher"/>
+
+           <action id="swagger4jive.places.all.tab"
+                   path="jive/tabs/places/*?filter=exists(context.extprops.swaggerURL)"
+                   label="Swagger"
+                   view="place-all-tab"/>
+
+           <action id="swagger4jive.places.settings.all.action"
+                   path="jive/settings/places/*"
+                   label="Configure Swagger for Jive"
+                   view="place-settings-all-action"/>
+
+          <!--
+           <action id="swagger4jive.createmenu.action"
+                   path="jive/actions/navmenu"
+                   label="Create Swagger Spec"
+                   view="createmenu-action"/>
+          -->
+
+           <action id="swagger4jive.app.rte.action"
+                   path="jive/actions/rte"
+                   label="Link to Swagger Spec"
+                   view="rte-action"
+                   icon="images/icon16.png"/>
+
+   			]]>
+		</Param>
+	</Require>
+
+      <!--
+  <Optional feature="content-rewrite">
+      <Param name="expires">60</Param>
+      <Param name="include-url">*</Param>
+      <Param name="include-url">javascripts</Param>
+      <Param name="include-url">css</Param>
+      <Param name="exclude-url">excluded</Param>
+      <Param name="exclude-url">moreexcluded</Param>
+      <Param name="minify-css">false</Param>
+      <Param name="minify-js">false</Param>
+      <Param name="minify-html">false</Param>
+  </Optional>
+      -->
+
+   <!-- Icons: 3 sizes, 16x16, 48x48, 128x128 -->
+   <Link rel="Icon"       href="images/icon16.png" />
+   <Link rel="MediumIcon" href="images/icon48.png" />
+   <Link rel="LargeIcon"  href="images/icon128.png" />
+
+   <!-- Preloaded Content: http://wiki.opensocial.org/index.php?title=Remote_Data_Requests_%28v0.9%29#Preloading_data -->
+   <!--
+   <Preload href="http://www.example.com" />
+   -->
+
+ </ModulePrefs>
+
+ <Content type="html"
+          view="home,canvas,ext-object,place-all-tab,createmenu-action,rte-action"
+          href="swagger4jive.html"
+          preferred_height="800" />
+
+<Content type="html"
+         view="place-settings-all-action"
+         href="swagger4jive-placeSettings-config.html"
+         preferred_height="800" />
+
+<Content type="html"
+        view="createmenu-action"
+        href="swagger4jive-createNew.html"
+        preferred_height="800" />
+
+</Module>

@@ -1,0 +1,19 @@
+{
+    "displayName": "Swagger for Jive",
+    "name": "swagger4jive-embed",
+    "description": "View a Swagger Specification",
+    "style": "CUSTOM_VIEW",
+    "displayWidth": "ALL",
+    "dataProviderKey": "internal",
+    "pageTypes": [
+        "PLACE",
+        "USER"
+    ],
+    "icons": {
+        "16": "%serviceURL%/osapp/swagger4jive/images/icon16.png",
+        "48": "%serviceURL%/osapp/swagger4jive/images/icon48.png",
+        "128": "%serviceURL%/osapp/swagger4jive/images/icon128.png"
+    },
+    "view": "%serviceURL%/osapp/swagger4jive/swagger4jive.html?features=responsive,tile,os-2.5,core-v3",
+    "config": "%serviceURL%/osapp/swagger4jive/swagger4jive-customTile-config.html?v2"
+}

@@ -1,0 +1,24 @@
+{
+	"displayName": "Swagger for Jive - Stream Integration",
+	"name": "swagger4jive-simple-stream",
+	"description": "Use an external agent (such as Jenkins) to post your Swagger specifications into Jive.",
+	"style": "ACTIVITY",
+	"icons": {
+		"16": "extension-16.png",
+		"48": "extension-48.png"
+	},
+	"config": "/public/swagger4jive-simpleStreamTile-config.html?features=jq-1.11,core-v3,tile",
+	"transform": {
+		"script": "xform.js"
+	},
+	"pageTypes": [
+		"PLACE",
+		"MOBILE",
+		"NEWS"
+	],
+	"categories": [
+		"other"
+	],
+	"displayWidth": "ALL",
+	"i18n": "*"
+}
