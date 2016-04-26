@@ -1,7 +1,10 @@
 # Swagger for Jive
 This add-on embeds Swagger.io capabilities into Jive.  For more details, please see the [Jive Developer Community](https://community.jivesoftware.com/community/developer).
 
+See also, [Swagger for Jive - An Open Source Add-on for the Open API Initiative](https://community.jivesoftware.com/community/developer/blog/2016/04/26/swagger-for-jive-an-open-source-add-on-for-the-open-api-initiative)
+
 To deploy simply download, and use the [Jive SDK](https://community.jivesoftware.com/docs/DOC-114053) to build the add-on:
+
 **jive-sdk build --apphosting="jive"**
 
 ## Canvas View w/Gadget URL Parameters
